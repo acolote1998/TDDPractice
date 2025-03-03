@@ -12,6 +12,8 @@ public class ZombieCounter {
         this.count = count;
     }
 
-
+    public void addZombie(){
+        count++;
+    }
 
 }
