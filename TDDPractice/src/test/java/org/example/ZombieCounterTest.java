@@ -34,4 +34,12 @@ class ZombieCounterTest {
         assertEquals(0,counter.getCount());
     }
 
+    @Test
+    public void shouldThrowExceptionIfZombieIsNegative(){
+        ZombieCounter counter = new ZombieCounter();
+        assertThrows(IllegalArgumentException.class,()-> {
+            counter.addZombie(-1);
+        });
+
+    }
 }
