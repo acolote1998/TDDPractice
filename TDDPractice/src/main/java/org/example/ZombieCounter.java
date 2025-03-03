@@ -9,7 +9,9 @@ public class ZombieCounter {
     }
 
     public void setCount(int count) {
-        this.count = count;
+    if(count>=0){
+            this.count = count;
+    }
     }
 
     public void addZombie(){
