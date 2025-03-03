@@ -14,8 +14,11 @@ public class ZombieCounter {
     }
     }
 
-    public void addZombie(){
-        count++;
+    public void addZombie(int zombies){
+        if (zombies<0){
+            throw new IllegalArgumentException("Cannot add a negative zombie");
+        }
+        count+= zombies;
     }
 
 }

@@ -15,15 +15,15 @@ class ZombieCounterTest {
     @Test
     public void addZombieIncreasesCountByOne(){
         ZombieCounter counter = new ZombieCounter();
-        counter.addZombie();
+        counter.addZombie(1);
         assertEquals(1,counter.getCount());
     }
 
     @Test
     public void addTwoZombiesIncreasingCountByOne(){
         ZombieCounter counter = new ZombieCounter();
-        counter.addZombie();
-        counter.addZombie();
+        counter.addZombie(1);
+        counter.addZombie(1);
         assertEquals(2,counter.getCount());
     }
 
