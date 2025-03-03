@@ -27,4 +27,11 @@ class ZombieCounterTest {
         assertEquals(2,counter.getCount());
     }
 
+    @Test
+    public void countCannotGoBelowZero(){
+        ZombieCounter counter = new ZombieCounter();
+        counter.setCount(-1);
+        assertEquals(0,counter.getCount());
+    }
+
 }
