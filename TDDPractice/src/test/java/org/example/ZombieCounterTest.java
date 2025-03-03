@@ -19,4 +19,12 @@ class ZombieCounterTest {
         assertEquals(1,counter.getCount());
     }
 
+    @Test
+    public void addTwoZombiesIncreasingCountByOne(){
+        ZombieCounter counter = new ZombieCounter();
+        counter.addZombie();
+        counter.addZombie();
+        assertEquals(2,counter.getCount());
+    }
+
 }
