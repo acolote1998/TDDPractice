@@ -8,7 +8,7 @@ class ZombieCounterTest {
 
     @Test
     public void counterStartsAtZero(){
-        ZombieCounter = new ZombieCounter();
+        ZombieCounter counter = new ZombieCounter();
         assertEquals(0,counter.getCount());
     }
 
