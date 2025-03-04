@@ -62,4 +62,20 @@ class LifeCounterTest {
         assertEquals(10,lifeCounter.getCounter());
     }
 
+    @Test
+    public void lifeCounterRemovesTenLives(){
+        LifeCounter lifeCounter = new LifeCounter();
+        lifeCounter.removeLife();
+        lifeCounter.removeLife();
+        lifeCounter.removeLife();
+        lifeCounter.removeLife();
+        lifeCounter.removeLife();
+        lifeCounter.removeLife();
+        lifeCounter.removeLife();
+        lifeCounter.removeLife();
+        lifeCounter.removeLife();
+        lifeCounter.removeLife();
+        assertEquals(0,lifeCounter.getCounter());
+    }
+
 }
