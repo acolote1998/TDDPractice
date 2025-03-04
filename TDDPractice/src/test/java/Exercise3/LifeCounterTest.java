@@ -1,5 +1,7 @@
 package Exercise3;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /*
@@ -15,5 +17,11 @@ Queremos asegurarnos de que el contador nunca baje de 0, aunque sigamos llamando
  */
 
 class LifeCounterTest {
+
+    @Test
+    public void lifeCounterStartsAtZero(){
+        LifeCounter lifeCounter = new LifeCounter();
+        assertEquals(1,lifeCounter.getCounter());
+    }
 
 }
