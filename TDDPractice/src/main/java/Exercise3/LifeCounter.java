@@ -24,7 +24,7 @@ public class LifeCounter {
     private int counter=0;
 
     public void addLife(){
-        counter=1;
+        counter++;
     }
 
 }
