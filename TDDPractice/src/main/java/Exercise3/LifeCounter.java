@@ -13,4 +13,14 @@ Queremos asegurarnos de que el contador nunca baje de 0, aunque sigamos llamando
  */
 
 public class LifeCounter {
+    public int getCounter() {
+        return counter;
+    }
+
+    public void setCounter(int counter) {
+        this.counter = counter;
+    }
+
+    private int counter=0;
+
 }
