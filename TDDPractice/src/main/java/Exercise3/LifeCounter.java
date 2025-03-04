@@ -27,4 +27,12 @@ public class LifeCounter {
         counter++;
     }
 
+    public void removeLife(){
+        if (counter>=1){
+            counter--;
+        }else{
+            counter=0;
+        }
+    }
+
 }
