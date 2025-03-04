@@ -39,4 +39,11 @@ class LifeCounterTest {
         assertEquals(2,lifeCounter.getCounter());
     }
 
+    @Test
+    public void lifeCounterCannotBeBelowZero(){
+        LifeCounter lifeCounter = new LifeCounter();
+        lifeCounter.removeLife();
+        assertEquals(0,lifeCounter.getCounter());
+    }
+
 }
