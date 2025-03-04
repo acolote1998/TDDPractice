@@ -10,7 +10,7 @@ public class DeadZombieCounter {
     }
 
     public void addDeadZombie(){
-        count=1;
+        count++;
     }
 
     private int count=0;
