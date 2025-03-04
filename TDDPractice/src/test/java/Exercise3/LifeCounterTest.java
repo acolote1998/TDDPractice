@@ -21,7 +21,7 @@ class LifeCounterTest {
     @Test
     public void lifeCounterStartsAtZero(){
         LifeCounter lifeCounter = new LifeCounter();
-        assertEquals(1,lifeCounter.getCounter());
+        assertEquals(0,lifeCounter.getCounter());
     }
 
 }
