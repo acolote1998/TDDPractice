@@ -2,12 +2,16 @@ package Exercise2;
 
 public class DeadZombieCounter {
     public int getCount() {
-        return 0;
+        return count;
     }
 
     public void setCount(int count) {
         this.count = count;
     }
 
-    private int count;
+    public void addDeadZombie(){
+        count=1;
+    }
+
+    private int count=0;
 }
