@@ -31,4 +31,12 @@ class LifeCounterTest {
         assertEquals(1,lifeCounter.getCounter());
     }
 
+    @Test
+    public void lifeCounterAddsTwoLives(){
+        LifeCounter lifeCounter = new LifeCounter();
+        lifeCounter.addLife();
+        lifeCounter.addLife();
+        assertEquals(2,lifeCounter.getCounter());
+    }
+
 }
